@@ -1,0 +1,143 @@
+* {
+    font-family: Font Awesome, SauceCode Pro Nerd Font;
+    font-size: 17px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.active {
+    border-bottom: 2px solid #ffffff;
+    border-radius: 2px;
+    min-width: 20px;
+}
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#custom-updates,
+#custom-notification,
+#pulseaudio {
+    background-color: #000000;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#window,
+#workspaces {
+    margin-top: 10px; 
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #000000;
+}
+
+#clock {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+#battery {
+    color: #ffffff;
+}
+
+#battery.charging, #battery.plugged {
+    color: #ffffff;
+    background-color: #1ed903;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #FF2400;
+    color: #bb9af7;
+    animation-name: blink;
+    animation-duration: 0.9s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+#memory {
+    color: #ffffff;
+}
+
+#disk {
+    color: #ffffff;
+}
+
+#network {
+    color: #ffffff;
+}
+
+#network.disconnected {
+    color: #ffffff;
+}
+
+#pulseaudio {
+    color: #ffffff;
+}
+
+#pulseaudio.muted {
+    color: #ffffff;
+}
+
+#custom-notification {
+    color: #ffffff;
+}
+
+#custom-updates {
+    color: #ffffff;
+    margin-left: 10px;
+}

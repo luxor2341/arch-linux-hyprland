@@ -1,0 +1,15 @@
+{
+
+"include": "$HOME/.config/waybar/modules.jsonc",
+
+// General waybar config
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+// Waybar modules position and layout
+    "modules-left": ["custom/updates", "custom/notification"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["network", "pulseaudio", "battery", "clock"]
+}

@@ -1,0 +1,40 @@
+format = """
+$character\
+"""
+
+right_format = """
+$git_branch\
+$git_status\
+$python\
+$lua\
+$java\
+$c\
+$directory\
+"""
+
+[directory]
+format = "[ $path ](bold #bb9af7)"
+truncation_length = 2
+truncation_symbol = '…/'
+
+[character]
+success_symbol = " [](bold #bb9af7)"
+error_symbol = " [✖](bold #f7768e)"
+
+[git_branch]
+format = 'via [$symbol $branch]($style)'
+
+[git_status]
+format = '[$all_status$ahead_behind ]($style)'
+
+[python]
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[lua]
+format = '[󰢱 ($version )]($style) via'
+
+[java]
+format = ' via [${symbol}(${version} )]($style)'
+
+[c]
+format = ' via [$symbol($version(-$name) )]($style)'
