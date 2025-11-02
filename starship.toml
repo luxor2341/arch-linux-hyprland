@@ -22,19 +22,19 @@ success_symbol = " [](bold #bb9af7)"
 error_symbol = " [✖](bold #f7768e)"
 
 [git_branch]
-format = 'via [$symbol $branch]($style)'
+format = '[$symbol $branch]($style) via '
 
 [git_status]
-format = '[$all_status$ahead_behind ]($style)'
+format = '[$all_status$ahead_behind ]($style) '
 
 [python]
-format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = '  via '
 
 [lua]
-format = '[󰢱 ($version )]($style) via'
+format = '󰢱  via '
 
 [java]
-format = ' via [${symbol}(${version} )]($style)'
+format = '  via '
 
 [c]
-format = ' via [$symbol($version(-$name) )]($style)'
+format = '  via '
