@@ -52,9 +52,10 @@
      },
 
     "network": {
-   	  "format-wifi": " {essid}",
+   	  "format-wifi": " {essid}", 
       "format-ethernet": " {ifname}",
       "format-disconnected": "⚠ Disconnected",
+      "tooltip-format": "{signalStrength}%",
       "on-click": "kitty nmtui"   
      },
 
